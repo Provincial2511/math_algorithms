@@ -16,5 +16,5 @@ x = symbols('x')
 func = ln((1 + x) / (1 - x))
 result = maclaurin_series(func, 6)
 result_sumpy = series(func, x, 0, 6).removeO()
-assert result.equals(result_sumpy), "Результаты не совпадают!" # Проверка ручного алгоритма со встроенным в SymPy
+assert result.equals(result_sumpy), "Результаты не совпадают!" # Проверка ручного алгоритма со встроенным в SymPy.
 pprint(result)
